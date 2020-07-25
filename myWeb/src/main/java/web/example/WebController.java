@@ -11,4 +11,8 @@ public class WebController {
 		return "index";
 	}
 
+	@GetMapping("index/shortNews")
+	public String shortNews() {
+		return "shortNews";
+	}
 }

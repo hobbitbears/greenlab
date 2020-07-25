@@ -27,7 +27,7 @@
 	
 	/* short_news, long_news, lunch */
 	.short_news, .long_news, .lunch {height:430px; margin:40px 40px 40px 40px;}
-	.short_news div a, .long_news div a, .lunch div a {color:black; font-size:1.4em; font-family:'Bazzi'}
+	.short_news div a, .long_news div a, .lunch div a {color:#6dc3a6; font-size:1.4em; font-family:'Bazzi'}
 	.short_news div:nth-child(2), .long_news div:nth-child(2), .lunch div:nth-child(2) {overflow:hidden; margin:0px 15px 0px 180px;}
 	.short_news div ul li img, .long_news div ul li img, .lunch div ul li img {width:350px; height:240px; border:1px solid black; float:left; margin:30px 20px 0px 0px;}
 	.short_news div:nth-child(3), .long_news div:nth-child(3), .lunch div:nth-child(3) {font-size:1.1em; text-align:center; margin:40px 0px 0px 0px;}
@@ -127,20 +127,17 @@
  <div class="subscribe">
 	 <div>
 		 <p>구독하면 매주 화목 아침마다<br>메일로 보내드립니다</p>
-		 <img src="image\Hobbit.png" style="width:100px">
 	 </div>
 	 <div>
-	 	<p>구독하면 매주 화목 아침마다<br>메일로 보내드립니다</p>
-	 	<p>연령과 성별은 보다 맟춤화된 소식을 전해드리기 위해서 입니다</p>
 	 	<form action="action" method="get">
-	 		<input type="text" name="nickname" placeholder="닉네임"><br>
+	 		<input type="text" name="nickname" placeholder="닉네임"><button>중복 확인</button><br>
 	 		<input type="text" name="email" placeholder="자주 사용하는 메일"><br>
-	 		<input type="radio" name="age" value="twenty">20대 <input type="radio" name="age" value="thirty">30대 
+	 		<!-- <input type="radio" name="age" value="twenty">20대 <input type="radio" name="age" value="thirty">30대 
 	 		<input type="radio" name="age" value="fourty">40대 <input type="radio" name="age" value="fifty">50대
 	 		<input type="radio" name="age" value="sixty">60대 <input type="radio" name="age" value="others">그 외<br>
-	 		<input type="radio" name="sex" value="m">남자 <input type="radio" name="sex" value="m">여자 <br>
-	 		<input type="radio" name="privacy">개인정보 수집에 동의합니다 <br>
-	 		<input type="submit">
+	 		<input type="radio" name="sex" value="m">남자 <input type="radio" name="sex" value="m">여자 <br> -->
+	 		<input type="radio" name="privacy"><a href="#">개인정보수집</a>및 <a href="#">이용약관</a>에 동의합니다 <br>
+	 		<button type="submit">구독하기</button>
 	 	</form>
 	 </div>
  </div>
@@ -153,13 +150,13 @@
  	</div>
  	<div>
  		<ul>
+ 			<li><a href="#">서비스이용약관</a></li>
  			<li><a href="#">개인정보처리방침</a></li>
  			<li><a href="#">문의사항</a></li>
  			<li>Green Labⓒ2020</li>
  		</ul>
  	</div>
  </div>
- 
  
  
  
