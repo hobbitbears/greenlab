@@ -11,8 +11,27 @@ public class WebController {
 		return "index";
 	}
 
-	@GetMapping("index/shortNews")
+	@GetMapping("/shortNews")
 	public String shortNews() {
 		return "shortNews";
 	}
+	
+	@GetMapping("/longNews")
+	public String longNews() {
+		return "longNews";
+	}
+	
+	@GetMapping("/lunch")
+	public String lunch() {
+		return "lunch";
+	}
+	
+	@GetMapping("/garbage")
+	public String garbage() {
+		return "shortNews";
+	}
+	
+	
+	
+	
 }
