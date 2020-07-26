@@ -28,7 +28,7 @@ public class WebController {
 	
 	@GetMapping("/garbage")
 	public String garbage() {
-		return "shortNews";
+		return "garbage";
 	}
 	
 	
