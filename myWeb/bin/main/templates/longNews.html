@@ -19,17 +19,22 @@
      .header div img {width:200px; height:40px; margin:20px 60px 0px 20px; float:left;}
      .header ul li {float:left; font-size:1.1em; margin:38px 35px 0px 0px;font-family:'Bazzi'}
      .header ul li a {color:#6dc3a6;}
-     .header div:nth-child(2) img {width:100vw; height:500px; margin:10px 0px 0px 0px;}
+     .header div:nth-child(2) img {width:100vw; height:45vh; margin:10px 0px 0px 0px;}
   
      /* content */
-     .latest_news {width:80%; overflow:hidden; margin: 0px auto; border-top:1px solid grey;}
-     .latest_news div:nth-child(1) {font-size:1.3em; font-family:'KOMACON'; margin:10px;}
-     .latest_news div:nth-child(2), .latest_news div:nth-child(3) {width:48%; margin:10px; float:left; border:1px solid grey;}
-	 #image {width:600px; display:bloce; margin:0px auto;}
-	 
+     .latest_news {width:60%; overflow:hidden; margin: 0px auto; border-top:1px solid grey;}
+     #title {font-size:1.3em; font-family:'KOMACON';}
+     #wrap {overflow:hidden; }
+     .news1 {width:49%; float:left; margin:5px; }
+     .news2 {width:49%; float:right; margin:5px; }
+     .news1 img, .news2 img {width:100%;}
+     .news1 div:nth-child(2) p {font-family:'KOMACON';}
+     
+     .other_news {width:60%; overflow:hidden; margin:0px auto;}
+     .other_news div {width:23%; height: 300px; float:left; margin:6px; border:1px solid grey; line-height:80px; text-align:center;}
      
      /* footer */
-     .footer {height:150px; background-color:#6dc3a6; display:grid; grid-template-columns:3fr 1fr;}
+     .footer {height:150px; background-color:#6dc3a6; display:grid; grid-template-columns:3fr 1fr; margin-top:50px;}
      .footer img {width:150px; margin:20px 0px 0px 100px; }
      .footer div p {color:white; margin:10px 0px 0px 100px;}
      .footer div:nth-child(2) ul a {color:white; line-height:170%; font-family:'KOMACON'; margin:}
@@ -56,26 +61,30 @@
 </div>
     
 <div class="latest_news">
-      <div>최신 소식</div>
+      <div id="title"><p>최신 소식</p></div>
 
-      <div>
-       	<div><img id="image" src="image\putin.png"></div>
-       	<div><p>러시아 푸틴 대통령 장기 집권</p>
-       	     <p>(2020.7.26) 러시아 대통령의 임기는 6년이고 현재 푸틴 대통령의 임기는 2024년에 종료되는데 그때 다시 대통령 선거에 나가 당선되면 2030년까지 대통령</p>
-       	</div>
+	  <div id="wrap">
+	      <div class="news1">
+	       	<div><img src="image\vietnam.png"></div>
+	       	<div><p>베트남 입국 허용</p>
+	       	     <p>(2020.7.26) 러시아 대통령의 임기는 </p>
+	       	</div>
+	      </div>
+	      <div class="news2">
+	       	<div><img src="image\vietnam.png"></div>
+	       	<div><p>베트남 입국 허용</p>
+	       	     <p>(2020.7.26) 러시아 대통령의 임기는 </p>
+	       	</div>
+	      </div>
       </div>
-      <div>
-       	<img src="image\putin.png">
-       	<p>러시아 푸틴 대통령 장기 집권</p>
-       	<p>(2020.7.26) 러시아 대통령의 임기는 6년이고 현재 푸틴 대통령의 임기는 2024년에 종료되는데 그때 다시 대통령 선거에 나가 당선되면 2030년까지 대통령</p>
-      </div>
+      
 </div>
 
 <div class="other_news">
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
+      <div>뉴스1<br>최신소식과 같은 형태</div>
+      <div>뉴스1<br>최신소식과 같은 형태</div>
+      <div>뉴스1<br>최신소식과 같은 형태</div>
+      <div>뉴스1<br>최신소식과 같은 형태</div>
 </div>    	
 
 
