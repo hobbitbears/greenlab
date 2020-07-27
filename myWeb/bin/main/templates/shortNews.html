@@ -15,10 +15,11 @@
       @font-face { font-family: 'KOMACON'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_seven@1.2/KOMACON.woff') format('woff'); font-weight: normal; font-style: normal; }
      
      /* header */
-     .header {height:80px; overflow:hidden;}
+     .header {height:600px; overflow:hidden;}
      .header div img {width:200px; height:40px; margin:20px 60px 0px 20px; float:left;}
      .header ul li {float:left; font-size:1.1em; margin:38px 35px 0px 0px;font-family:'Bazzi'}
      .header ul li a {color:#6dc3a6;}
+     .header div:nth-child(2) img {width:100vw; height:45vh; margin:10px 0px 0px 0px;}
      
      /* footer */
      .footer {height:150px; background-color:#6dc3a6; display:grid; grid-template-columns:3fr 1fr; margin-top:50px;}
@@ -35,37 +36,40 @@
 </head>
 <body>
 
-   <div class="header">
-     	<div>
-     		<a href="#"><img alt="Green Lab" src="image\Logo\Logo_greenColor.png"></a>
-    		 	<ul>
-    		 		<li><a href="#"> 짧은 소식.</a></li>
-    		 		<li><a href="#">조금 긴 소식. </a></li>
-    		 		<li><a href="#">직장인 점심. </a></li>
-    		 		<li><a href="#">버려지는 것들. </a></li>
-    		 	</ul>
-        </div>
-   </div>
-   <hr>
-    
-   <div class="content">
-          	
+<div class="header">
+  	<div>
+  		<a href="#"><img alt="Green Lab" src="image\Logo\Logo_greenColor.png"></a>
+ 	 	<ul>
+ 	 		<li><a href="#">짧은 소식.</a></li>
+ 	 		<li><a href="#">조금 긴 소식. </a></li>
+ 	 		<li><a href="#">직장인 점심. </a></li>
+ 	 		<li><a href="#">버려지는 것들. </a></li>
+ 	 	</ul>
+    </div>
+    <div>
+       <img alt="조금 긴 뉴스" src="image\hue.jpg">
+    </div>
+</div>
 
- 
-   <div class="footer">
-        <div>
-       	 	<a href="#"><img alt="Green Lab" src="image\Logo\Logo_whiteColor.png"></a>
-      	 	<p>Better Decision<br>Better Communication</p>
-        </div>
-           	<div>
-           		<ul>
-           			<li><a href="#">서비스이용약관</a></li>
-           			<li><a href="#">개인정보처리방침</a></li>
-           			<li><a href="#">문의사항</a></li>
-           			<li style="color:#ffffff;">Green Labⓒ2020</li>
-           		</ul>
-           	</div>
-   </div>
+    
+<div class="content">
+       	
+
+
+<div class="footer">
+     <div>
+    	 	<a href="#"><img alt="Green Lab" src="image\Logo\Logo_whiteColor.png"></a>
+   	 		<p>Better Decision<br>Better Communication</p>
+     </div>
+   	 <div>
+   			<ul>
+	   			<li><a href="#">서비스이용약관</a></li>
+	   			<li><a href="#">개인정보처리방침</a></li>
+	   			<li><a href="#">문의사항</a></li>
+	   			<li style="color:#ffffff;">Green Labⓒ2020</li>
+   			</ul>
+   	 </div>
+</div>
 
 
 </body>
