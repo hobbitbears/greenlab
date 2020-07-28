@@ -26,11 +26,11 @@
 	
 	
 	/* short_news, long_news, lunch */
-	.short_news, .long_news, .lunch {height:430px; margin:40px 40px 40px 40px;}
-	.short_news div a, .long_news div a, .lunch div a {color:#6dc3a6; font-size:1.4em; font-family:'Bazzi'}
-	.short_news div:nth-child(2), .long_news div:nth-child(2), .lunch div:nth-child(2) {overflow:hidden; margin:0px 15px 0px 180px;}
-	.short_news div ul li img, .long_news div ul li img, .lunch div ul li img {width:350px; height:240px; border:1px solid black; float:left; margin:30px 20px 0px 0px;}
-	.short_news div:nth-child(3), .long_news div:nth-child(3), .lunch div:nth-child(3) {font-size:1.1em; text-align:center; margin:40px 0px 0px 0px;}
+	.shortNews, .longNews, .lunch {height:430px; margin:40px 40px 40px 40px;}
+	.shortNews div a, .longNews div a, .lunch div a {color:#6dc3a6; font-size:1.4em; font-family:'Bazzi'}
+	.shortNews div:nth-child(2), .longNews div:nth-child(2), .lunch div:nth-child(2) {overflow:hidden; margin:0px 15px 0px 180px;}
+	.shortNews div ul li img, .longNews div ul li img, .lunch div ul li img {width:350px; height:240px; border:1px solid black; float:left; margin:30px 20px 0px 0px;}
+	.shortNews div:nth-child(3), .longNews div:nth-child(3), .lunch div:nth-child(3) {font-size:1.1em; text-align:center; margin:40px 0px 0px 0px;}
 
 
 	/* subscribe */
@@ -52,12 +52,12 @@
  <div class="header">
  		<div class="wrap">
  			<div>
- 				<a href="index.html"><img alt="Green Lab" src="image\Logo\Logo_whiteColor.png"></a>
+ 				<a href="/"><img alt="Green Lab" src="image\Logo\Logo_whiteColor.png"></a>
 			 	<ul>
-			 		<li><a href="#"> 짧은 소식.</a></li>
-			 		<li><a href="#">조금 긴 소식. </a></li>
-			 		<li><a href="#">직장인 점심. </a></li>
-			 		<li><a href="#">버려지는 것들. </a></li>
+			 		<li><a href="/shortNews"> 짧은 소식.</a></li>
+			 		<li><a href="/longNews">조금 긴 소식. </a></li>
+			 		<li><a href="/lunch">직장인 점심. </a></li>
+			 		<li><a href="/garbage">버려지는 것들. </a></li>
 			 	</ul>
  			</div>
  			<div>푸른 하늘. 맑은 공기.<br>환경을 생각하는<br>새로운 인사이트를 만나보세요</div>
@@ -67,9 +67,9 @@
  <hr>
 
  
- <div class="short_news">
+ <div class="shortNews">
  	<div>
- 		<a href="#">짧은 소식</a>
+ 		<a href="/shortNews">짧은 소식</a>
  	</div>
  	<div>
  		<ul>
@@ -80,15 +80,15 @@
  		</ul>
  	</div>
  	<div id="more">
- 		<a href="#">더보기</a>
+ 		<a href="/shortNews">더보기</a>
  	</div>
  </div>
  <hr>
  
  
- <div class="long_news">
+ <div class="longNews">
  	<div>
- 		<a href="#">조금 긴 소식</a>
+ 		<a href="longNews">조금 긴 소식</a>
  	</div>
  	<div>
  		<ul>
@@ -99,7 +99,7 @@
  		</ul>
  	</div>
  	<div id="more">
- 		<a href="#">더보기</a>
+ 		<a href="/longNews">더보기</a>
  	</div>
  </div>
  <hr>
@@ -107,7 +107,7 @@
  
  <div class="lunch">
  	<div>
- 		<a href="#">직장인 점심</a>
+ 		<a href="/lunch">직장인 점심</a>
  	</div>
  	<div>
  		<ul>
@@ -118,7 +118,7 @@
  		</ul>
  	</div>
  	<div id="more">
- 		<a href="#">더보기</a>
+ 		<a href="/lunch">더보기</a>
  	</div>
  </div>
  <hr>
@@ -145,7 +145,7 @@
  
  <div class="footer">	
  	<div>
- 	 	<a href="index.html"><img alt="Green Lab" src="image\Logo\Logo_whiteColor.png"></a>
+ 	 	<a href="/"><img alt="Green Lab" src="image\Logo\Logo_whiteColor.png"></a>
  	 	<p>Better Decision<br>Better Communication</p>
  	</div>
  	<div>
@@ -153,7 +153,7 @@
  			<li><a href="#">서비스이용약관</a></li>
  			<li><a href="#">개인정보처리방침</a></li>
  			<li><a href="#">문의사항</a></li>
- 			<li style="color:#ffffff;">Green Labⓒ2020</li>
+ 			<li style="color:#ffffff;">GreenLab9ⓒ2020</li>
  		</ul>
  	</div>
  </div>
