@@ -2,45 +2,51 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>짧은 소식</title>
+<title>짧은 소식.</title>
 
 <style>
-  	  body{margin:0; padding:0px;}
+  	  body{margin:0px; padding:0px;}
       li {list-style:none;}
       a {text-decoration:none}
-      hr {margin: 0px;}
-      
+      hr {margin-top: 40px;}
+
       @font-face { font-family: 'MaplestoryOTFBold'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/MaplestoryOTFBold.woff') format('woff'); font-weight: normal; font-style: normal; }
       @font-face { font-family: 'Bazzi'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/Bazzi.woff') format('woff'); font-weight: normal; font-style: normal; }
       @font-face { font-family: 'KOMACON'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_seven@1.2/KOMACON.woff') format('woff'); font-weight: normal; font-style: normal; }
-     
+
      /* header */
-     .header {height:650px; overflow:hidden;}
-     .header div img {width:200px; height:40px; margin:20px 60px 0px 20px; float:left;}
+     .header {height:650px; overflow:hidden; margin:0px;}
+     .header div img {height:40px;  margin:20px 60px 0px 20px; float:left;}
      .header ul li {float:left; font-size:1.1em; margin:38px 35px 0px 0px;font-family:'Bazzi'}
      .header ul li a {color:#6dc3a6;}
-     .header div:nth-child(2) img {width:100vw; height:100vh; margin:10px 0px 0px 0px;}
-     
+     .header div:nth-child(2) img {width:100%; height:100%; margin:10px 0px 0px 0px;}
+
      /* content */
      .content {width:60%; margin: 0px auto;}
-     .wrap {width:100%;}
-     .news {width:100%; display:grid; grid-template-columns:70% 30%; border-bottom:0.6px solid grey; }
-     
-     .date {font-size:2.5em; font-weight:bold; font-family:'KOMACON'; margin-top:70px; border-bottom:4px solid grey;}
-     .classfy {font-size:1.2em; font-family:'Bazzi';  padding-left:12px; color:#6dc3a6;}
-     .title {font-size:2em; font-family:'KOMACOM'; font-weight:bolder; padding-left:15px;}
-     .article {font-size:1.1em; font-family:'KOMACON'; color:#565854; padding-left:15px; padding-right:30px; word-spacing: 1px; line-height:200%;}
-     .news div:nth-child(2) img {width:90%; display:block; margin:auto;}
-     .news div:nth-child(2) p {font-size:0.9em; font-family:'KOMACOM'; text-align:center; margin:0px;}
-     
-     
+     .news {width:100%; display:grid; grid-template-columns:80% 20%;}
+     .title {font-size:1.9em; font-family:'KOMACOM'; font-weight:bolder;}
+     .title a {color: black;}
+     .summary {font-size:1.1em; font-family:'KOMACON'; color:#565854; padding-right:150px; word-spacing: 1px; line-height:200%;}
+     .wrap {overflow:hidden;}
+     .wrap div {float:left; font-size:1.3em; font-family:'Bazzi'; color:#6dc3a6; margin-right:20px;}
+     /* .wrap div:nth-child(1) {color:#6dc3a6; font-family:'Bazzi'} */
+
+     .news div:nth-child(2) {text-align:center;}
+     .news div:nth-child(2) img {width:100%; margin-top:40px;}
+     .news div:nth-child(2) div {font-size:0.6em;}
+
+     .more {text-align:center; margin:30px 0px 60px 0px;}
+     .more a {font-size:1.7em; font-family:'Bazzi'; color:#6dc3a6;}
+
+
+
      /* footer */
-     .footer {height:150px; background-color:#6dc3a6; display:grid; grid-template-columns:3fr 1fr; margin-top:50px;}
-     .footer img {width:150px; margin:20px 0px 0px 100px; }
-     .footer div p {color:white; margin:10px 0px 0px 100px;}
-     .footer div:nth-child(2) ul a {color:white; line-height:170%; font-family:'KOMACON'; margin:}
-     .footer div:nth-child(2) ul li:nth-child(3) {color:white; }
-   
+     .footer {height:150px; background-color:#6dc3a6; display:grid; grid-template-columns:3fr 1fr;}
+	 .footer img {height:30px; margin:40px 0px 0px 100px; }
+	 .footer div p {color:white; margin:10px 0px 0px 100px;}
+	 .footer div:nth-child(2) ul a {color:white; line-height:170%; font-family:'KOMACON'; margin:}
+	 .footer div:nth-child(2) ul li:nth-child(3) {color:white; }
+
 </style>
 </head>
 <body>
@@ -60,106 +66,156 @@
     </div>
 </div>
 
-    
-<div class="content"> 
-	<div class="date">2020년 7월 26일 </div>
-	<div class="wrap">
+<hr>
+<div class="content">
 		<div class="news">
 			<div>
-				<p class="classfy">국제관계</p>
-				<p class="title">미중 갈등</p>
-				<p class="article">휴스턴 총영사관은 미국에서 처음 설치된 영사관이라는 점에서 의미가 있는데, 이걸 닫으라고 한 건 갈등이 그만큼 심하다는 것. 트럼프는 대선 전략으로 지지 세력을 
-					더 모으기 위해 앞으로도 중국에 세게 나올 것 같아, 둘 사이의 갈드이 한동안 계속될것 같아요휴스턴 총영사관은 미국에서 처음 설치된 영사관이라는 점에서 의미가 있는데, 이걸 닫으라고 
-					한 건 갈등이 그만큼 심하다는 것. <br>트럼프는 대선 전략으로 지지 세력을 더 모으기 위해 앞으로도 중국에 세게 나올 것 같아, 둘 사이의 갈드이 한동안 계속될것 같아요휴스턴 총영사관은 
-					미국에서 처음 설치된 영사관이라는 점에서 의미가 있는데, 이걸 닫으라고 한 건 갈등이 그만큼 심하다는 것. 트럼프는 대선 전략으로 지지 세력을 더 모으기 위해 앞으로도 중국에 세게 
-					나올 것 같아, 둘 사이의 갈드이 한동안 계속될것 같아요
+        <p class="title"><a href="#">미국과 중국의 갈등</a></p>
+				<p class="summary">휴스턴 총영사관은 미국에서 처음 설치된 영사관이라는 점에서
+          			의미미국에서 처음 설치된 영사관이라는 의미미국에서 처음 영사관이라는 의미에서 처음 설치된 영사관이라는 점에서
+          			의미미국</p>
+
+        <div class="wrap">
+          <div>국제관계</div>
+          <div>2020/07/26</div>
+        </div>
 			</div>
 			<div>
 				<a href="#"><img src="image\s1.jpg"></a>
-				<p>ⓒ서울신문</p>
+				<div>ⓒ서울신문</div>
 			</div>
 		</div>
+</div>
+
+
+<hr>
+<div class="content">
 		<div class="news">
 			<div>
-				<p class="classfy">환경</p>
-				<p class="title">길거리 쓰레기가 미세 플라스틱으로</p>
-				<p class="article">요즘 매스미디어를 통해 미세 플라스틱의 심각성을 들어 보셨을 겁니다. 지금 주변을 둘러보면 플라스틱으로 만들어진 제품, 물건들로  뒤덮여 있는 것을 알 수 있는데요~ 
-					지금 제가 타이핑을 하는 키보드도 플라스틱 덩어리입니다미세 플라스틱은 크기가 5mm 이하를 말하는데... 그 기준도 정의하는 기관마다 조금씩 다릅니다. 이런 미세 플라스틱의 가장 큰
-					문제는 과연 어떤 문제를 일으키는지 우리는 아직 정확히 모른다는 것입니다. 좀 더 정확히는 생태계에 어떤 영향을 미치는지 그리고 어떤 농도이면 괜찮고 어떤 농도이면 심각한지 우리는 
-					아직 모릅니다. 연구가 많이 진행되고 있고 최근 연구는 우리 인체의 미토콘드리아에 영향을 준다는 정도이나 이마저도 후속 연구가 필요하다고 결론짓고 있습니다</p>
+        <p class="title"><a href="#">길거리 쓰레기가 미세 플라스틱으로</a></p>
+				<p class="summary">요즘 매스미디어를 통해 미세 플라스틱의 심각성을 들어 보셨을 겁니다
+          			요즘 매스미디어를 통해 미세 플라스틱의 심각성을 들어 보셨을 겁니다미세 플라스틱의 심각성을 들어 보셨을 겁니다
+          			요즘 매스</p>
+
+        <div class="wrap">
+          <div>환경</div>
+          <div>2020/07/26</div>
+        </div>
 			</div>
 			<div>
 				<a href="#"><img src="image\s2.jpg"></a>
-				<p>ⓒ서울신문</p>
+				<div>ⓒ서울신문</div>
 			</div>
 		</div>
+</div>
+
+<hr>
+<div class="content">
 		<div class="news">
 			<div>
-				<p class="classfy">시사</p>
-				<p class="title">민식이법 첫 사망 사고</p>
-				<p class="article">전주에서 두 살배기 어린아이가 어린이 보호구역(스쿨존)에서 차량에 치여 숨지는 사고가 발생했고, 경찰은 민식이법을 적용하여 검찰에 송치했다고 하네요... 
-				당시 차량의 속도는 스쿨존 규정 속도인 시속 30km를 넘지 않는 9~18km로 확인돼 민식이법 적용 여부를 두고 관심이 집중됐었지요.경찰은... 운전자의 중앙성 침범이라는 불법 행위가 
-				확인되었고 규정속도 30km를 지켰다고 하더라도 어린이 안전에 유의하면서 운전해야 할 의무를 위반했다고 판단해서 민식이법을 적용했다고 하네요. 경찰은 운전자에게 구속영장을 청구하였는데.
-				법원에서는 해당 사건에 대해 다툼의 여지가 있다며 기각했지요. 민식이법은 스쿨존에서 사고를 낸 피해자에게 상해를 입힌 경우 1년 이상 15년 이하의 징역 또는 500만 원 이상 3000만 원 
-				이하의 벌금에 처하는 법입니다</p>
+        <p class="title"><a href="#">미국과 중국의 갈등</a></p>
+				<p class="summary">휴스턴 총영사관은 미국에서 처음 설치된 영사관이라는 점에서
+          			의미미국에서 처음 설치된 영사관이라는 의미미국에서 처음 영사관이라는 의미에서 처음 설치된 영사관이라는 점에서
+          			의미미국</p>
+
+        <div class="wrap">
+          <div>국제관계</div>
+          <div>2020/07/26</div>
+        </div>
+			</div>
+			<div>
+				<a href="#"><img src="image\s1.jpg"></a>
+				<div>ⓒ서울신문</div>
+			</div>
+		</div>
+</div>
+
+<hr>
+<div class="content">
+		<div class="news">
+			<div>
+        <p class="title"><a href="#">민식이법 첫 사망 사고</a></p>
+				<p class="summary">전주에서 두 살배기 어린아이가 어린이 보호구역(스쿨존)에서
+          			 차량에 치여 숨지는 사고가 발생 전주에서 두 살배기 어린아이가 어린이어린아이가 어린이 보호구역(스쿨존)에서
+          			 차량에 치여 숨지는</p>
+
+        <div class="wrap">
+          <div>시사</div>
+          <div>2020/07/26</div>
+        </div>
 			</div>
 			<div>
 				<a href="#"><img src="image\s3.jpg"></a>
-				<p>ⓒ서울신문</p>
+			<div>ⓒ서울신문</div>
 			</div>
 		</div>
-	</div>
-	
-	<div class="date">2020년 7월 25일 </div>
-	<div class="wrap">
-		<div class="news">
-			<div>
-				<p class="classfy">경제</p>
-				<p class="title">2020 세법 개정안</p>
-				<p class="article">소득세 최고세율을 42%에서 45%로 인상했습니다. 현재는 과세표준 소득이 5억 원을 초과하면 42%의 세율을 적용했는데, 과세표준 소득이 10억 원을 초과하면 
-					45%의 세율을 적용하게 됩니다. 2010년 35%에서 10년 동안 10%가 뛰었네요. 지방 소득세를 합하게 되면 49.5%.... 여기에 해당되는 사람은 1만 6000명 정도이고 더 걷히는 세금은
-					9000억 원이라고 합니다.법인을 설립해서 소득세를 덜 내려는 개인 유사법인에게 초과 유보소득에 대한 배당 소득세를 과세한답니다. 신탁제도와 관련해 종합부동산세를 내는 주체를 
-					수탁자에서 위탁자로 바꾸며... 연간 금융소득이 2000만 원을 초과해 누진과세를 적용받는 금융소득종합과세 대상자의 이자 및 배당 소득 과세특례 상품 신규 가입을 원천 봉쇄 증권거래세를
-					0.02% 인하하는 시점을 2022년에서 2012년으로 1년 앞당겼고, 금융 투자 소득세 신설 시점은 2022년에서 2023년으로 1년 미루었습니다. 금융 투자소득에 대한 세금을 매달 걷으면 
-					투자자들이 복리 효과를 누릴 수 없다는 비판을 받아온 월별 원천징수 방침은 반기별 원천징수로 변경됐고, 장기 투자에 대한 저율 과세가 필요하다는 지적은 반영되지 않았네요</p>
-			</div>
-			<div>
-				<a href="#"><img src="image\s4.jpg"></a>
-				<p>ⓒ서울신문</p>
-			</div>
-		</div>
-		<div class="news">
-			<div>
-				<p class="classfy">국제관계</p>
-				<p class="title">미중 갈등</p>
-				<p class="article">휴스턴 총영사관은 미국에서 처음 설치된 영사관이라는 점에서 의미가 있는데, 이걸 닫으라고 한 건 갈등이 그만큼 심하다는 것. 트럼프는 대선 전략으로 지지 세력을 더 모으기 
-				   위해 앞으로도 중국에 세게 나올 것 같아, 둘 사이의 갈드이 한동안 계속될것 같아요</p>
-			</div>
-			<div>
-				<a href="#"><img src="image\putin.png"></a>
-				<p>ⓒ서울신문</p>
-			</div>
-		</div>
-	</div>
-
 </div>
-       	
+
+<hr>
+<div class="content">
+		<div class="news">
+			<div>
+        <p class="title"><a href="#">길거리 쓰레기가 미세 플라스틱으로</a></p>
+				<p class="summary">요즘 매스미디어를 통해 미세 플라스틱의 심각성을 들어 보셨을 겁니다
+          			요즘 매스미디어를 통해 미세 플라스틱의 심각성을 들어 보셨을 겁니다미세 플라스틱의 심각성을 들어 보셨을 겁니다
+          			요즘 매스미디어</p>
+
+        <div class="wrap">
+          <div>환경</div>
+          <div>2020/07/26</div>
+        </div>
+			</div>
+			<div>
+				<a href="#"><img src="image\s2.jpg"></a>
+				<div>ⓒ서울신문</div>
+			</div>
+		</div>
+</div>
+
+<hr>
+<div class="content">
+		<div class="news">
+			<div>
+        <p class="title"><a href="#">민식이법 첫 사망 사고</a></p>
+				<p class="summary">전주에서 두 살배기 어린아이가 어린이 보호구역(스쿨존)에서
+           			차량에 치여 숨지는 사고가 발생 전주에서 두 살배기 어린아이가 어린이전주에서 두 살배기 어린아이가 어린이 보호구역(스쿨존)에서
+           			차량에 치여 숨지는 사고</p>
+
+        <div class="wrap">
+          <div>시사</div>
+          <div>2020/07/26</div>
+        </div>
+			</div>
+			<div>
+				<a href="#"><img src="image\s3.jpg"></a>
+			<div>ⓒ서울신문</div>
+			</div>
+		</div>
+</div>
+
+
+
+<hr>
+<div class="more">
+  <a href="#">더보기</a>
+</div>
+
 
 
 <div class="footer">
-     <div>
-    	 	<a href="/"><img alt="Green Lab" src="image\Logo\Logo-white.png"></a>
-   	 		<p>Better Decision<br>Better Communication</p>
-     </div>
-   	 <div>
-   			<ul>
-	   			<li><a href="#">서비스이용약관</a></li>
-	   			<li><a href="#">개인정보처리방침</a></li>
-	   			<li><a href="#">문의사항</a></li>
-	   			<li style="color:#ffffff;">GreenLab9ⓒ2020</li>
-   			</ul>
-   	 </div>
-</div>
+ 	<div>
+ 	 	<a href="/"><img alt="Green Lab" src="image\Logo\Logo-white.png"></a>
+ 	 	<p>진정성을 추구합니다.</p>
+ 	</div>
+ 	<div>
+ 		<ul>
+ 			<li><a href="#">서비스이용약관</a></li>
+ 			<li><a href="#">개인정보처리방침</a></li>
+ 			<li><a href="#">문의사항</a></li>
+ 			<li style="color:#ffffff;">GreenLab9ⓒ2020</li>
+ 		</ul>
+ 	</div>
+ </div>
 
 </body>
 </html>

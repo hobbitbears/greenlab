@@ -2,10 +2,10 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Green Lab</title>
+<title>GreenLab9</title>
 
 <style type="text/css">
-	body{margin:0; padding:0px;}	
+	body{margin:0px; padding:0px;}
 	li {list-style:none;}
 	a {text-decoration:none}
 	hr {margin: 30px 0px 0px 0px;}
@@ -18,19 +18,20 @@
 
 	/* header */
 	.header {width:100vw; height:100vh; background-color:#6dc3a6; overflow:hidden; display:grid; grid-template-columns:57% 43%;}
-	.wrap {display:grid; grid-template-rows:10% 90%;}
-	.wrap img {width:200px; height:40px; margin:20px 60px 0px 20px; float:left;}
-	.header ul a {color:white; float:left; font-size:1.1em; margin:25px 35px 0px 0px;font-family:'Bazzi'}	  
-	.wrap div:nth-child(2) {font-size:3em; text-align:center; color:#c36d8a; margin:200px auto; line-height:200%; font-family:'KOMACON'; font-weight:bold; letter-spacing:3px; word-spacing:4px;}
-	.header div:nth-child(2) img {width:85%;}
+	.wrap {display:grid; grid-template-rows:25% 75%;}
+	.wrap img {height:40px; margin:35px 60px 0px 20px; float:left;}
+	.wrap ul a {color:white; float:left; font-size:1.2em; margin:38px 35px 0px 0px;font-family:'Bazzi'}	  
+	.wrap div:nth-child(2) p {font-size:3.8em; text-align:center; color:#ffffff; margin-top:80px; line-height:150%; font-family:'KOMACON'; font-weight:bold; letter-spacing:3px; word-spacing:4px;}
+	.wrap div:nth-child(2) button {width:300px; background-color:#f8585b; border:none; color:#ffffff; padding:15px 0px; display:block; margin:100px auto; font-family:'KOMACON'; font-size:2em; cursor:pointer; }
+	.header div:nth-child(2) img {width:87%;}
 	
 	
 	/* short_news, long_news, lunch */
 	.shortNews, .longNews, .lunch {height:430px; margin:40px 40px 40px 40px;}
-	.shortNews div a, .longNews div a, .lunch div a {color:#6dc3a6; font-size:1.4em; font-family:'Bazzi'}
+	.shortNews div a, .longNews div a, .lunch div a {color:#6dc3a6; font-size:1.7em; font-family:'Bazzi'}
 	.shortNews div:nth-child(2), .longNews div:nth-child(2), .lunch div:nth-child(2) {overflow:hidden; margin:0px 15px 0px 180px;}
 	.shortNews div ul li img, .longNews div ul li img, .lunch div ul li img {width:350px; height:240px; border:1px solid black; float:left; margin:30px 20px 0px 0px;}
-	.shortNews div:nth-child(3), .longNews div:nth-child(3), .lunch div:nth-child(3) {font-size:1.1em; text-align:center; margin:40px 0px 0px 0px;}
+	.shortNews div:nth-child(3), .longNews div:nth-child(3), .lunch div:nth-child(3) { text-align:center; margin:40px 0px 0px 0px;}
 
 
 	/* subscribe */
@@ -40,7 +41,7 @@
 
 	/* footer */
 	.footer {height:150px; background-color:#6dc3a6; display:grid; grid-template-columns:3fr 1fr;}
-	.footer img {width:150px; margin:20px 0px 0px 100px; }
+	.footer img {height:30px; margin:40px 0px 0px 100px; }
 	.footer div p {color:white; margin:10px 0px 0px 100px;}
 	.footer div:nth-child(2) ul a {color:white; line-height:170%; font-family:'KOMACON'; margin:}
 	.footer div:nth-child(2) ul li:nth-child(3) {color:white; }
@@ -60,7 +61,11 @@
 			 		<li><a href="/garbage">버려지는 것들. </a></li>
 			 	</ul>
  			</div>
- 			<div>푸른 하늘. 맑은 공기.<br>환경을 생각하는<br>새로운 인사이트를 만나보세요</div>
+ 			<div>
+ 				<p>직장인을 위한<br>새로운 인사이트를 만나보세요</p>
+ 				<button type="button" onClick="location.href='#'">구독하기 (무료)</button>
+ 			</div>
+ 			
  		</div>	
  		<div><img alt="Hot-air ballon" src="image\Ballon.png"></div>
   </div>
@@ -137,7 +142,7 @@
 	 		<input type="radio" name="age" value="sixty">60대 <input type="radio" name="age" value="others">그 외<br>
 	 		<input type="radio" name="sex" value="m">남자 <input type="radio" name="sex" value="m">여자 <br> -->
 	 		<input type="radio" name="privacy"><a href="#">개인정보수집</a>및 <a href="#">이용약관</a>에 동의합니다 <br>
-	 		<button type="submit">구독하기</button>
+	 		<button type="button">구독하기</button>
 	 	</form>
 	 </div>
  </div>
@@ -146,7 +151,7 @@
  <div class="footer">	
  	<div>
  	 	<a href="/"><img alt="Green Lab" src="image\Logo\Logo-white.png"></a>
- 	 	<p>Better Decision<br>Better Communication</p>
+ 	 	<p>진정성을 추구합니다.</p>
  	</div>
  	<div>
  		<ul>

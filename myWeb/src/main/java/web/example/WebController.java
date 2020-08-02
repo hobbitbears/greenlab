@@ -31,6 +31,10 @@ public class WebController {
 		return "garbage";
 	}
 	
+	@GetMapping("/subscribe")
+	public String subscribe() {
+		return "subscribe";
+	}
 	
 	
 	
