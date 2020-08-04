@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>조금 긴 소식.</title>
+<title>조금 긴 소식 - GreenLab9.그린랩나인</title>
 
 <style>
   	  body{margin:0; padding:0px;}
@@ -10,7 +10,6 @@
       a {text-decoration:none}
       hr {margin: 0px;}
       
-      @font-face { font-family: 'MaplestoryOTFBold'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/MaplestoryOTFBold.woff') format('woff'); font-weight: normal; font-style: normal; }
       @font-face { font-family: 'Bazzi'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/Bazzi.woff') format('woff'); font-weight: normal; font-style: normal; }
       @font-face { font-family: 'KOMACON'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_seven@1.2/KOMACON.woff') format('woff'); font-weight: normal; font-style: normal; }
      
@@ -20,18 +19,23 @@
      .header ul li {float:left; font-size:1.1em; margin:38px 35px 0px 0px;font-family:'Bazzi'}
      .header ul li a {color:#6dc3a6;}
      .header div:nth-child(2) img {width:100vw; height:100vh; margin:10px 0px 0px 0px;}
+
+	 #page-title {color:#6dc3a6; font-size:1.7em; font-family:'Bazzi'; padding-left:60px;} 
+
   
      /* content */
      .latest_news {width:60%; overflow:hidden; margin: 0px auto; border-top:1px solid grey;}
      #title {font-size:1.3em; font-family:'KOMACON';}
      #wrap {overflow:hidden; }
-     .news1 {width:49%; float:left; margin:5px; }
-     .news2 {width:49%; float:right; margin:5px; }
-     .news1 img, .news2 img {width:100%;}
-     .news1 div:nth-child(2) p {font-family:'KOMACON';}
+     .news {width:49%; float:left; margin:5px; font-size:1.1em;}
+     .news img {width:100%;}
+     .news div:nth-child(2) p {font-family:'KOMACON';}
      
      .other_news {width:60%; overflow:hidden; margin:0px auto;}
      .other_news div {width:23%; height: 300px; float:left; margin:6px; border:1px solid grey; line-height:80px; text-align:center;}
+     
+     .more {text-align:center; margin:30px 0px 60px 0px;}
+     .more a {font-size:1.7em; font-family:'Bazzi'; color:#6dc3a6;}
      
      /* footer */
      .footer {height:150px; background-color:#6dc3a6; display:grid; grid-template-columns:3fr 1fr;}
@@ -56,24 +60,26 @@
      </div>
      <div>
           <img alt="조금 긴 뉴스" src="image\book.jpg">
-     </div>
-        
+     </div>        
 </div>
+    
+<p id="page-title">조금 긴 소식.</p>
+    
     
 <div class="latest_news">
       <div id="title"><p>최신 소식</p></div>
 
 	  <div id="wrap">
-	      <div class="news1">
+	      <div class="news">
 		       	<div><img src="image\vietnam.png"></div>
 		       	<div><p>베트남 입국 허용</p>
-		       	     <p>(2020.7.26) 러시아 대통령의 임기는 </p>
+		       	     <p>2020/07/26  러시아 대통령의 임기는 대통령의 임기는대통령의 임기는 대통 </p>
 		       	</div>
 	      </div>
-	      <div class="news2">
+	      <div class="news">
 		       	<div><img src="image\vietnam.png"></div>
 		       	<div><p>베트남 입국 허용</p>
-		       	     <p>(2020.7.26) 러시아 대통령의 임기는 </p>
+		       	     <p>2020/07/26  러시아 대통령의 임기는 대통령의 임기는대통령의 임기는 대통 </p>
 		       	</div>
 	      </div>
       </div>
@@ -84,7 +90,19 @@
       <div>뉴스1<br>최신소식과 같은 형태</div>
       <div>뉴스1<br>최신소식과 같은 형태</div>
       <div>뉴스1<br>최신소식과 같은 형태</div>
-</div>    	
+</div>    
+
+<div class="other_news">
+      <div>뉴스1<br>최신소식과 같은 형태</div>
+      <div>뉴스1<br>최신소식과 같은 형태</div>
+      <div>뉴스1<br>최신소식과 같은 형태</div>
+      <div>뉴스1<br>최신소식과 같은 형태</div>
+</div>    		
+
+
+<div class="more">
+  <a href="#">더보기</a>
+</div>
 
 
 <div class="footer">	
@@ -94,8 +112,8 @@
  	</div>
  	<div>
  		<ul>
- 			<li><a href="#">서비스이용약관</a></li>
- 			<li><a href="#">개인정보처리방침</a></li>
+ 			<li><a href="/termsOfService">서비스이용약관</a></li>
+ 			<li><a href="/privacy">개인정보처리방침</a></li>
  			<li><a href="#">문의사항</a></li>
  			<li style="color:#ffffff;">GreenLab9ⓒ2020</li>
  		</ul>

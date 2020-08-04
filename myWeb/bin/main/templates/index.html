@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>GreenLab9</title>
+<title>GreenLab9.그린랩나인</title>
 
 <style type="text/css">
 	body{margin:0px; padding:0px;}
@@ -11,7 +11,6 @@
 	hr {margin: 30px 0px 0px 0px;}
 	
     /* 한글 웹폰트 */
-	@font-face { font-family: 'MaplestoryOTFBold'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/MaplestoryOTFBold.woff') format('woff'); font-weight: normal; font-style: normal; }
 	@font-face { font-family: 'Bazzi'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/Bazzi.woff') format('woff'); font-weight: normal; font-style: normal; }
 	@font-face { font-family: 'KOMACON'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_seven@1.2/KOMACON.woff') format('woff'); font-weight: normal; font-style: normal; }
 
@@ -21,8 +20,9 @@
 	.wrap {display:grid; grid-template-rows:25% 75%;}
 	.wrap img {height:40px; margin:35px 60px 0px 20px; float:left;}
 	.wrap ul a {color:white; float:left; font-size:1.2em; margin:38px 35px 0px 0px;font-family:'Bazzi'}	  
-	.wrap div:nth-child(2) p {font-size:3.8em; text-align:center; color:#ffffff; margin-top:80px; line-height:150%; font-family:'KOMACON'; font-weight:bold; letter-spacing:3px; word-spacing:4px;}
-	.wrap div:nth-child(2) button {width:300px; background-color:#f8585b; border:none; color:#ffffff; padding:15px 0px; display:block; margin:100px auto; font-family:'KOMACON'; font-size:2em; cursor:pointer; }
+	.wrap div:nth-child(2) p {font-size:3.8em; text-align:center; color:#ffffff; margin-top:80px; line-height:150%; font-family:'MaplestoryOTFBold'; font-weight:bold; letter-spacing:3px; word-spacing:4px;}
+	.wrap div:nth-child(2) button {width:260px; background-color:#f8585b; border:none; color:#ffffff; padding:15px 0px; display:block; margin:100px auto; border-radius:4px; font-family:'KOMACON'; font-size:2em; cursor:pointer; }
+	.wrap div:nth-child(2) button:hover {background-color:white; color:#6dc3a6;}
 	.header div:nth-child(2) img {width:87%;}
 	
 	
@@ -32,11 +32,6 @@
 	.shortNews div:nth-child(2), .longNews div:nth-child(2), .lunch div:nth-child(2) {overflow:hidden; margin:0px 15px 0px 180px;}
 	.shortNews div ul li img, .longNews div ul li img, .lunch div ul li img {width:350px; height:240px; border:1px solid black; float:left; margin:30px 20px 0px 0px;}
 	.shortNews div:nth-child(3), .longNews div:nth-child(3), .lunch div:nth-child(3) { text-align:center; margin:40px 0px 0px 0px;}
-
-
-	/* subscribe */
-	.subscribe {height:350px; display:grid; grid-template-columns:1fr 1fr; }
-	.subscribe div:nth-child(1) {text-align:center; font-size:1.4em; font-famly:'KOMACON';letter-spacing:3px; word-spacing:4px;}
 
 
 	/* footer */
@@ -63,7 +58,7 @@
  			</div>
  			<div>
  				<p>직장인을 위한<br>새로운 인사이트를 만나보세요</p>
- 				<button type="button" onClick="location.href='#'">구독하기 (무료)</button>
+ 				<button type="button" onClick="location.href='/subscribe'">구독하기 (무료)<div style="font-size:0.5em; margin-top:9px;">진정성을 추구합니다.</div></button>
  			</div>
  			
  		</div>	
@@ -74,7 +69,7 @@
  
  <div class="shortNews">
  	<div>
- 		<a href="/shortNews">짧은 소식</a>
+ 		<a href="/shortNews">짧은 소식.</a>
  	</div>
  	<div>
  		<ul>
@@ -93,14 +88,13 @@
  
  <div class="longNews">
  	<div>
- 		<a href="longNews">조금 긴 소식</a>
+ 		<a href="longNews">조금 긴 소식.</a>
  	</div>
  	<div>
  		<ul>
  			<li><img src="image\Dolphin.png"></li>
  			<li><img src="image\Mars.png"></li>
  			<li><img src="image\Mask.png"></li>
- 			<!-- <li><img class="sample" src="image\Putin.png"></li> -->
  		</ul>
  	</div>
  	<div id="more">
@@ -112,39 +106,18 @@
  
  <div class="lunch">
  	<div>
- 		<a href="/lunch">직장인 점심</a>
+ 		<a href="/lunch">직장인 점심.</a>
  	</div>
  	<div>
  		<ul>
  			<li><img src="image\1.jpg"></li>
  			<li><img src="image\2.jpg"></li>
  			<li><img src="image\3.jpg"></li>
- 			<!-- <li><img class="sample" src="image\Putin.png"></li> -->
  		</ul>
  	</div>
  	<div id="more">
  		<a href="/lunch">더보기</a>
  	</div>
- </div>
- <hr>
- 
-
- <div class="subscribe">
-	 <div>
-		 <p>구독하면 매주 화목 아침마다<br>메일로 보내드립니다</p>
-	 </div>
-	 <div>
-	 	<form action="action" method="get">
-	 		<input type="text" name="nickname" placeholder="닉네임"><button>중복 확인</button><br>
-	 		<input type="text" name="email" placeholder="자주 사용하는 메일"><br>
-	 		<!-- <input type="radio" name="age" value="twenty">20대 <input type="radio" name="age" value="thirty">30대 
-	 		<input type="radio" name="age" value="fourty">40대 <input type="radio" name="age" value="fifty">50대
-	 		<input type="radio" name="age" value="sixty">60대 <input type="radio" name="age" value="others">그 외<br>
-	 		<input type="radio" name="sex" value="m">남자 <input type="radio" name="sex" value="m">여자 <br> -->
-	 		<input type="radio" name="privacy"><a href="#">개인정보수집</a>및 <a href="#">이용약관</a>에 동의합니다 <br>
-	 		<button type="button">구독하기</button>
-	 	</form>
-	 </div>
  </div>
  
  
@@ -155,8 +128,8 @@
  	</div>
  	<div>
  		<ul>
- 			<li><a href="#">서비스이용약관</a></li>
- 			<li><a href="#">개인정보처리방침</a></li>
+ 			<li><a href="/termsOfService">서비스이용약관</a></li>
+ 			<li><a href="/privacy">개인정보처리방침</a></li>
  			<li><a href="#">문의사항</a></li>
  			<li style="color:#ffffff;">GreenLab9ⓒ2020</li>
  		</ul>

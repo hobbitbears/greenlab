@@ -36,6 +36,14 @@ public class WebController {
 		return "subscribe";
 	}
 	
+	@GetMapping("/privacy")
+	public String privacy() {
+		return "privacy";
+	}
 	
+	@GetMapping("/termsOfService")
+	public String termsOfService() {
+		return "termsOfService";
+	}
 	
 }

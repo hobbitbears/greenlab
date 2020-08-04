@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>버려지는 것들</title>
+<title>버려지는 것들 - GreenLab9.그린랩나인</title>
 
 <style>
   	  body{margin:0; padding:0px;}
@@ -10,7 +10,7 @@
       a {text-decoration:none}
       hr {margin: 0px;}
       
-      @font-face { font-family: 'MaplestoryOTFBold'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/MaplestoryOTFBold.woff') format('woff'); font-weight: normal; font-style: normal; }
+     
       @font-face { font-family: 'Bazzi'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/Bazzi.woff') format('woff'); font-weight: normal; font-style: normal; }
       @font-face { font-family: 'KOMACON'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_seven@1.2/KOMACON.woff') format('woff'); font-weight: normal; font-style: normal; }
      
@@ -20,6 +20,32 @@
      .header ul li {float:left; font-size:1.1em; margin:38px 35px 0px 0px;font-family:'Bazzi'}
      .header ul li a {color:#6dc3a6;}
      .header div:nth-child(2) img {width:100vw; height:100vh; margin:10px 0px 0px 0px;}
+     
+ 	  #page-title {color:#6dc3a6; font-size:1.7em; font-family:'Bazzi'; padding-left:60px;} 
+     
+     /* content   */
+	 .content {width:60%; margin:0px auto;}
+	 #photo {width:100%; overflow:hidden; margin:0px auto;}
+	 #photo div {width:23%; height: 200px; float:left; margin:6px; border:1px solid grey; text-align:center; }
+
+	 .more {text-align:center; margin:30px 0px 60px 0px;}
+     .more a {font-size:1.7em; font-family:'Bazzi'; color:#6dc3a6;}
+
+	 #upload-file {width:60%; border:2px solid #6dc3a6; margin:0 auto; padding:10px 0px; border-radius:4px;}
+	 #upload-file button {width:97%; border:1px dotted; font-size: 1.2em; background-color:#f2f2f2; display:block; margin:0 auto; line-height:180%;}
+
+
+     form {width:60%;  margin:0 auto; margin-top:20px; margin-bottom:80px; }
+     
+
+     input[type=text] {width:70%; font-size:1.1em; color:#6dc3a6; padding:12px 20px; margin-left:110px; margin-bottom:20px; box-sizing:border-box; border:2px solid #6dc3a6; border-radius:4px;}
+	 input::placeholder {color:#6dc3a6;}
+	 input[type=text]:focus {background-color:#6dc3a6; border:2px solid #6dc3a6; color:white;}
+	 
+	 #upload-all {width:150px; background-color:#6dc3a6; border:none; color:#ffffff; padding:15px 0px; display:block; border-radius:4px; font-size:1.3em; cursor:pointer; margin:40px 0px 0px 250px;}
+	 #upload-all:hover {background-color:white; color:#6dc3a6; border:3px solid #6dc3a6; font-weight:bold;} 
+	 
+     
      
      /* footer */
      .footer {height:150px; background-color:#6dc3a6; display:grid; grid-template-columns:3fr 1fr;}
@@ -46,9 +72,44 @@
      </div>
 </div>
 
+<p id="page-title">버려지는 것들.</p>
     
 <div class="content">
-          	<h1>버려지는 것들 내용</h1>
+   
+    <div id="photo">
+ 		<div>사진 1장<br><br>장소/날짜</div>
+    	<div>사진 1장<br><br>장소/날짜</div>
+    	<div>사진 1장<br><br>장소/날짜</div>
+    	<div>사진 1장<br><br>장소/날짜</div>
+   	 </div>
+   	 
+   	 <div id="photo">
+ 		<div>사진 1장<br><br>장소/날짜</div>
+    	<div>사진 1장<br><br>장소/날짜</div>
+    	<div>사진 1장<br><br>장소/날짜</div>
+    	<div>사진 1장<br><br>장소/날짜</div>
+   	 </div>
+   	 
+   	 <div id="photo">
+ 		<div>사진 1장<br><br>장소/날짜</div>
+    	<div>사진 1장<br><br>장소/날짜</div>
+    	<div>사진 1장<br><br>장소/날짜</div>
+    	<div>사진 1장<br><br>장소/날짜</div>
+   	 </div>
+   	 
+   	 
+    <div class="more"><a href="#">더보기</a></div>	 
+   	 
+   	
+ 	<div id="upload-file">
+ 		<button><p>버려지는 것들을 공유해 주세요.<br>여기로 사진을 끌어놓으세요.</p></button>	
+ 	</div>
+ 	
+	<form action="#" method="get">
+  		<input type="text" name="lunch-place" placeholder="장소가 어디였나요?    예) 서울시 종로구"><br>
+  		<button id="upload-all" type="submit">업로드</button>
+  	</form>    
+           	
 </div>
 
 
@@ -59,8 +120,8 @@
  	</div>
  	<div>
  		<ul>
- 			<li><a href="#">서비스이용약관</a></li>
- 			<li><a href="#">개인정보처리방침</a></li>
+ 			<li><a href="/termsOfService">서비스이용약관</a></li>
+ 			<li><a href="/privacy">개인정보처리방침</a></li>
  			<li><a href="#">문의사항</a></li>
  			<li style="color:#ffffff;">GreenLab9ⓒ2020</li>
  		</ul>
