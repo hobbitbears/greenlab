@@ -41,9 +41,9 @@ public class WebController {
 		return "privacy";
 	}
 	
-	@GetMapping("/termsOfService")
-	public String termsOfService() {
-		return "termsOfService";
+	@GetMapping("/termsOfUse")
+	public String termsOfUse() {
+		return "termsOfUse";
 	}
 	
 }
