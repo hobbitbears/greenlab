@@ -16,12 +16,6 @@ import web.data.repogitory.UserInfoRepo;
 @Service
 public class UserSerivce {
 	
-	/**
-	 * 엔티티 메니저
-	 */
-	@Autowired
-	EntityManager entityManager;
-	
 	@Autowired
 	UserInfoRepo userInfoRepo;
 	

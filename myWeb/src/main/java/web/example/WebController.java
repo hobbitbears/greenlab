@@ -1,10 +1,18 @@
 package web.example;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 
+import web.data.entity.NewsShort;
+import web.service.NewsService;
+
 @Controller
 public class WebController {
+	
+	@Autowired
+	NewsService newsService;
+	
 	
 	@GetMapping("/")
 	public String index() {
@@ -45,5 +53,4 @@ public class WebController {
 	public String termsOfUse() {
 		return "termsOfUse";
 	}
-	
 }
