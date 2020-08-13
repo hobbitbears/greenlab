@@ -49,6 +49,12 @@ public class NewsShort implements Serializable {
 	private String content;
 	
 	/**
+	 * 출처
+	 */
+	@Column(name="source", length=100)
+	private String source;
+	
+	/**
 	 * 생성일
 	 */
 	@Column(name="created")
