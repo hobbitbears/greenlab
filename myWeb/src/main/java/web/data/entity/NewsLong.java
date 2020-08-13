@@ -37,6 +37,12 @@ public class NewsLong implements Serializable {
 	private String title;
 	
 	/**
+	 * 기사 대표 이미지
+	 */
+	@Column(name="title_image", length=200)
+	private String titleImage;
+	
+	/**
 	 * 기사 내용
 	 */
 	@Column(name="content", length=4000)

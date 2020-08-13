@@ -1,5 +1,7 @@
 package web.service;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -10,20 +12,20 @@ import web.data.repogitory.NewsLongRepo;
 import web.data.repogitory.NewsShortRepo;
 
 /**
- * °í°´Á¤º¸ °ü·Ã Serivce
+ * ê³ ê°ì •ë³´ ê´€ë ¨ Serivce
  */
 @Slf4j
 @Service
 public class NewsService {
 	
 	/**
-	 * ±ä¼Ò½Ä Data Control
+	 * ê¸´ì†Œì‹ Data Control
 	 */
 	@Autowired
 	NewsLongRepo newsLongRepo;
 	
 	/**
-	 * ÂªÀº¼Ò½Ä Data Control
+	 * ì§§ì€ì†Œì‹ Data Control
 	 */
 	@Autowired
 	NewsShortRepo newsShortRepo;
@@ -31,10 +33,10 @@ public class NewsService {
 	
 	
 	/**
-	 * ÂªÀº¼Ò½Ä ÀúÀå
+	 * ì§§ì€ì†Œì‹ ì €ì¥
 	 * 
-	 * @param userInfoForm ÀÔ·°ÇÒ »ç¿ëÀÚ Á¤º¸ (ÇöÀç±âÁØ Email)
-	 * @return Á¤»óÀúÀåÀÇ °æ¿ì ID°ª(¾çÀÇ Á¤¼ö) , ¾Æ´Ñ°æ¿ì -1
+	 * @param userInfoForm ì…ëŸ­í•  ì‚¬ìš©ì ì •ë³´ (í˜„ì¬ê¸°ì¤€ Email)
+	 * @return ì •ìƒì €ì¥ì˜ ê²½ìš° IDê°’(ì–‘ì˜ ì •ìˆ˜) , ì•„ë‹Œê²½ìš° -1
 	 */
 	public int saveNewsShort(NewsShort newsShort) {
 		
@@ -47,12 +49,22 @@ public class NewsService {
 		return newsShort.getId();
 	}
 	
+	/**
+	 * ì§§ì€ì†Œì‹ ë¶ˆëŸ¬ì˜¤ê¸° (ë¦¬ìŠ¤íŠ¸)
+	 * 
+	 * @param userInfoForm ì…ëŸ­í•  ì‚¬ìš©ì ì •ë³´ (í˜„ì¬ê¸°ì¤€ Email)
+	 * @return ì •ìƒì €ì¥ì˜ ê²½ìš° IDê°’(ì–‘ì˜ ì •ìˆ˜) , ì•„ë‹Œê²½ìš° -1
+	 */
+	public List<NewsShort> getNewsShortList() {
+		List<NewsShort> newsShortList = newsShortRepo.findAll();
+		return newsShortList;
+	}
 	
 	/**
-	 * ±ä¼Ò½Ä ÀúÀå
+	 * ê¸´ì†Œì‹ ì €ì¥
 	 * 
-	 * @param userInfoForm ÀÔ·°ÇÒ »ç¿ëÀÚ Á¤º¸ (ÇöÀç±âÁØ Email)
-	 * @return Á¤»óÀúÀåÀÇ °æ¿ì ID°ª(¾çÀÇ Á¤¼ö) , ¾Æ´Ñ°æ¿ì -1
+	 * @param userInfoForm ì…ëŸ­í•  ì‚¬ìš©ì ì •ë³´ (í˜„ì¬ê¸°ì¤€ Email)
+	 * @return ì •ìƒì €ì¥ì˜ ê²½ìš° IDê°’(ì–‘ì˜ ì •ìˆ˜) , ì•„ë‹Œê²½ìš° -1
 	 */
 	public int saveNewsLong(NewsLong newsLong) {
 		

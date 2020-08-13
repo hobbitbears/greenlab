@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html xmlns:th="http://www.thymeleaf.org">
 <head>
 <meta charset="UTF-8">
 <title>GreenLab9.그린랩나인</title>
@@ -74,10 +74,9 @@
  	</div>
  	<div>
  		<ul>
- 			<li><img src="image\Dolphin.png"></li>
- 			<li><img src="image\Mars.png"></li>
- 			<li><img src="image\Mask.png"></li>
- 			<!-- <li><img class="sample" src="image\Putin.png"></li> -->
+ 			<li th:each="shortNews : ${newsShortList}">
+ 				<img th:src="${shortNews.titleImage}" th:alt="${shortNews.titleImage}"/>
+ 			</li>
  		</ul>
  	</div>
  	<div id="more">
