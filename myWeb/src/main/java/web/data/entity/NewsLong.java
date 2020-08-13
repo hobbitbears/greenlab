@@ -23,7 +23,7 @@ public class NewsLong implements Serializable {
 	private static final long serialVersionUID = 3424178735440675007L;
 
 	/**
-	 * ÀÚµ¿»ı¼º primary Key
+	 * ìë™ìƒì„± primary Key
 	 */
 	@Id
 	@Column(name="id")
@@ -31,26 +31,26 @@ public class NewsLong implements Serializable {
 	private Integer id;
 	
 	/**
-	 * ±â»ç Á¦¸ñ
+	 * ê¸°ì‚¬ ì œëª©
 	 */
 	@Column(name="title", length=200)
 	private String title;
 	
 	/**
-	 * ±â»ç ³»¿ë
+	 * ê¸°ì‚¬ ë‚´ìš©
 	 */
 	@Column(name="content", length=4000)
 	private String content;
 	
 	/**
-	 * »ı¼ºÀÏ
+	 * ìƒì„±ì¼
 	 */
 	@Column(name="created")
 	@CreatedDate
 	private LocalDateTime created;
 	
 	/**
-	 * ¼öÁ¤ÀÏ
+	 * ìˆ˜ì •ì¼
 	 */
 	@Column(name="modified")
 	@UpdateTimestamp
