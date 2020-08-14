@@ -28,14 +28,15 @@
       #paragraph {font-size:1.2em; margin-bottom:35px;}
       #partition {border-bottom: 1px solid #6dc3a6; margin:80px 0 20px 0px;}
 
-      .related_news {display:grid; grid-template-columns:50% 50%;}
-      .related_news_title {font-size:1.9em; font-weight:bold; margin-right:30px; height-line:300%;}
-      .related_news_title a {color:black;}
-      img {weight:100%; }
+      .wrap {display:grid; grid-template-columns:30% 70%; margin:15px 0 0px 30px; }
+      #photo img {width:100%; margin:0 auto; display:flex; justify-content:center; align-items:center;}
+      #related_news_title {font-size:1.1em; padding-left:35px; display:flex; justify-content:center; align-items:center;}
+      #related_news_title a {color:black; line-height:160%;}
+      #source {width:30%; margin-left:30px; margin-bottom: 40px; font-size:0.8em; text-align:center;}
 
 
      /* footer */
-       .footer {height:150px; background-color:#6dc3a6; display:grid; grid-template-columns:3fr 1fr;}
+     .footer {height:150px; background-color:#6dc3a6; display:grid; grid-template-columns:3fr 1fr;}
 	   .footer img {height:30px; margin:40px 0px 0px 100px; }
 	   .footer div p {color:white; margin:10px 0px 0px 100px;}
 	   .footer div:nth-child(2) ul a {color:white; line-height:170%; font-family:'KOMACON'; margin:}
@@ -61,21 +62,18 @@
 </div>
 
 <article class="">
-  <div id="classify">국제관계 &nbsp 2020/08/08 </div>
+  <div id="classify">국제·외교 &nbsp 2020/08/08 </div>
   <div id="title">레바논 베이루트 대 폭발</div>
-  
   <div id="paragraph">
     8월 4일 레바논의 수도 베이루트 인근의 베이루트 항에서 대 폭발이 있었습니다. 지진 규모 4.5와 맞먹을
     정도의 엄청난 폭발이어서 처음에는 테러가 아닌가 하는 말이 나올 정도였습니다. 폭발의 원인은 질산암모늄으로 알려졌는데,
     레바논 정부는 6년 전 몰디바 선적 MV 로서스에서 질산암모늄 2,750톤을 압수하고 베이루트 항에 허술하게 보관하다가
     그 질산암모늄이 폭발한 것입니다. 질산암모늄은 비료를 만드는 데 쓰이지만 강한 산화력으로 폭탄으로 만들 수도 있다고 합니다.
   </div>
-  
   <div id="paragraph">
     이 폭발로 171명이 사망하고 6000명 넘게 부상했고 30만 명 넘게 집을 잃었다고 합니다. 이런 피해를 금액으로 환산해 보면 약 150억 달러,
     우리나라 돈으로 약 18조 원에 이른다고 합니다. 이 액수는 레바논의 국내 총생산량(GDP)의 25%에 해당하는 금액입니다.
   </div>
-  
   <div id="paragraph">
     레바논 정부가 질산암모늄 보관의 위험성에 관해 보고를 받고도 바로 조처를 하지 않은 것이 알려지면서
     레바논 시민들은 거리로 뛰쳐나와 격렬한 시위를 벌였습니다. 이 시위로 레바논 시민 230명이 다치고 경찰 1명이 사망했습니다.
@@ -86,18 +84,22 @@
   <div id="partition"></div>
   <div id="classify">관련 기사</div>
 
-  <div class="related_News">
-  			<div>
-          <p class="title"><a href="https://https://www.npr.org/2020/08/04/898969935/massive-explosion-rocks-beirut-damaging-
-            buildings-and-shattering-windows">Enormous Explosion Rocks Beirut, Killing More Than 100, Wounding Thousands</a></p>
-  			</div>
+  <div id="related_news">
+    <div class="wrap">
+          <div id="photo">
+            <a href="https://www.npr.org/2020/08/04/898969935/massive-explosion-rocks-beirut-damaging-buildings-and-shattering-windows">
+              <img src="image\200808_shortNews_1.png"></a>
 
-  			<div>
-  				<a href="https://https://www.npr.org/2020/08/04/898969935/massive-explosion-rocks-beirut-damaging-
-            buildings-and-shattering-windows"><img src="image\200808_shortNews_1.png"></a>
-  				<div>ⓒNPR</div>
-  			</div>
+          </div>
+
+    			<div id="related_news_title">
+            <a href="https://www.npr.org/2020/08/04/898969935/massive-explosion-rocks-beirut-damaging-buildings-and-shattering-windows">
+              Enormous Explosion Rocks Beirut, Killing More Than 100, Wounding Thousands</a>
+    			</div>
+    </div>
+    <div id="source">ⓒNPR</div>
   </div>
+
 
 </article>
 
