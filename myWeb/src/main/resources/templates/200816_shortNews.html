@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>GreenLab9</title>
+
+<style>
+  	  body{margin:0px; padding:0px;}
+      a {text-decoration:none}
+
+      @font-face { font-family: 'Bazzi'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/Bazzi.woff') format('woff'); font-weight: normal; font-style: normal; }
+      @font-face { font-family: 'KOMACON'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_seven@1.2/KOMACON.woff') format('woff'); font-weight: normal; font-style: normal; }
+
+     /* header */
+     .header {overflow:hidden; margin:0px;}
+     .header div img {height:40px;  margin:20px 60px 0px 20px; float:left;}
+     .header ul li {float:left; font-size:1.1em; margin:38px 35px 0px 0px; font-family:'Bazzi'; list-style:none;}
+     .header ul li a {color:#6dc3a6;}
+
+     .line1 {width:70%; height:25px; border-bottom: 2px solid #6dc3a6; float:left; clear:both;}
+     .line2 {width:70%; height:10px; border-bottom: 2px solid #6dc3a6; float:right; }
+
+     /* article */
+	  article {width:40%; margin:80px auto; line-height:220%; font-family:'KOMACON'; color:#373737;}
+      #classify {font-size:1.1em; color:#6dc3a6; font-family:'Bazzi'; margin-bottom:8px;}
+      #title {font-size:2.6em; font-weight:bold; margin-bottom:80px;}
+
+      #photo {width:100%;}
+      #photo_explain {font-size:0.9em; text-align:center; margin-bottom:60px;}
+      #paragraph {font-size:1.2em; margin-bottom:40px;}
+
+      #partition {border-bottom: 1px solid #6dc3a6; padding-top:60px;}
+      #reference {font-size:1em; margin-left:20px; list-style-type: square;}
+      #reference a {color:black;}
+
+
+     /* footer */
+      .footer {height:150px; background-color:#6dc3a6; display:grid; grid-template-columns:3fr 1fr;}
+	  .footer img {height:30px; margin:40px 0px 0px 100px; }
+	  .footer div p {color:white; margin:10px 0px 0px 100px;}
+	  .footer div:nth-child(2) ul a {color:white; line-height:170%; font-family:'KOMACON'; margin:}
+	  .footer div:nth-child(2) ul li:nth-child(3) {color:white; }
+
+</style>
+</head>
+
+<body>
+<div class="header">
+  	<div>
+  		<a href="/"><img alt="Green Lab" src=".\Photo\Logo-green.png"></a>
+ 	 	<ul>
+ 	 		<li><a href="/shortNews">짧은 소식.</a></li>
+ 	 		<li><a href="/longNews">조금 긴 소식. </a></li>
+ 	 		<li><a href="/lunch">직장인 점심. </a></li>
+ 	 		<li><a href="/garbage">버려지는 것들. </a></li>
+ 	 	</ul>
+    </div>
+
+    <div class="line1"></div>
+    <div class="line2"></div>
+</div>
+
+<article>
+  <div id="classify">환경 &nbsp 2020/08/16 </div>
+  <div id="title">지상낙원 모리셔스, 기름 유출로 환경비상사태</div>
+
+  <img id="photo" src=".\Photo\200816_shortNews.png" alt="모리셔스 일본 선박 기름 유츌 사고">
+  <div id="photo_explain">ⓒBBC</div>
+
+  <div id="paragraph">
+    7월 25일 일본 선박 와카시오호는 모리셔스 남동쪽 산호초 바다에서 좌초돼 천 톤가량의 기름이 바다로 유출되었습니다. 좌초된 배의 선체에 균열이 커지면서 배가 두 동강 날 위험이 있었으나, 8월 15일 선체 앞부분이 결국 분리되어 남아 있던 2천 톤 이상의 기름이 추가 유출되고 있다고 합니다.
+  </div>
+  <div id="paragraph">
+    제주도보다 약간 큰 면적을 가지고 있는 모리셔스는 동아프리카 마다가스카르 섬 옆에 위치하고 있습니다. 천혜의 자연환경으로 세계적으로 유명한 휴양지로 알려져 있고 우리나라 신혼부부도 많이 찾는 곳입니다. 특히, 모리셔스의 산호생태계는 국내총생산(GDP)의 20%를 차지하는 관광업을 꾸려나가는 데 있어서 아주 중요한 자원입니다만, 이번 기름 유출 사고로 생태계 파괴는 물론 경제적으로도 어마어마한 피해를 보게 되었습니다. 모리셔스 총리는 환경비상사태를 선포했고 국제사회의 도움을 요청하고 있습니다.
+  </div>
+  <div id="paragraph">
+    모리셔스 기름유출 사고를 보면서 우리나라에서 있었던 1995년 시프린스호, 2007년 허베이 스피리트호 오염 사고가 생각이 나네요. 당시 많은 국민의 자발적 도움이 끊이질 않아 가슴 뭉클했지만 피해보상에 대한 관련 법이 거의 전무한 상태여서 특별법을 만들고 새로운 행정부서를 창설하고 했지요. 모리셔스도 앞으로 피해보상에 대해 녹록지 않은 과정을 겪을 것으로 보입니다. 그보다도 더 큰 문제는 환경파괴! 일부 전문가들은 피해 복원에 수십 년이 걸릴 것으로 말합니다. 모리셔스… 가보고 싶은 버킷 리스트였는데~~
+  </div>
+
+  <div id="partition"></div>
+  <div id="classify">관련 기사</div>
+
+  <ol id="reference">
+    <li>
+      <a href="https://www.bbc.com/news/world-africa-53831687">
+        BBC, Mauritius oil spill: Satellite images show removal operation</a>
+    </li>
+  </ol>
+
+</article>
+
+<footer th:replace="/layout/footer"></footer>
+
+
+</body>
+</html>
