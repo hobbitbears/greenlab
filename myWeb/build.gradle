@@ -32,6 +32,8 @@ dependencies {
 	compile 'org.mariadb.jdbc:mariadb-java-client'
 	// For JUnit Test
 	testCompile 'org.springframework.boot:spring-boot-starter-test'
+
+	implementation 'org.apache.tika:tika-core:1.24.1'
 }
 
 test {

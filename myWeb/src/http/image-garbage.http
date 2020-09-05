@@ -1,0 +1,16 @@
+POST http://localhost:8080/image/garbage
+Content-Type: multipart/form-data; boundary=WebAppBoundary
+
+--WebAppBoundary
+Content-Disposition: form-data; name="name"
+
+구로구에서 발견
+--WebAppBoundary--
+
+--WebAppBoundary
+Content-Disposition: form-data; name="file"; filename="file.txt"
+
+< ./README.md
+--WebAppBoundary--
+
+###
