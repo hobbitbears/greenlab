@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>GreenLab9</title>
+<link rel="shortcut icon" href=".\Photo\favicon.ico" type="image/x-icon">
+<link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
+
+<style>
+  	  body{margin:0px; padding:0px;}
+      a {text-decoration:none}
+
+      @font-face { font-family: 'Bazzi'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/Bazzi.woff') format('woff'); font-weight: normal; font-style: normal; }
+      @font-face { font-family: 'KOMACON'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_seven@1.2/KOMACON.woff') format('woff'); font-weight: normal; font-style: normal; }
+
+     /* header */
+     .header {overflow:hidden; margin:0px;}
+     .header div img {height:40px;  margin:20px 60px 0px 20px; float:left;}
+     .header ul li {float:left; font-size:1.1em; margin:38px 35px 0px 0px; font-family:'Bazzi'; list-style:none;}
+     .header ul li a {color:#6dc3a6;}
+
+     .line1 {width:70%; height:25px; border-bottom: 2px solid #6dc3a6; float:left; clear:both;}
+     .line2 {width:70%; height:10px; border-bottom: 2px solid #6dc3a6; float:right; }
+
+     /* article */
+	  article {width:40%; margin:80px auto; line-height:200%; font-family:'Nanum Gothic'; color:#373737;}
+      #classify {font-size:1.1em; color:#6dc3a6; font-family:'Bazzi'; margin-bottom:8px; }
+      #title {font-size:2.4em; font-weight:bold; font-family:'KOMACON'; margin-bottom:80px;}
+
+      #photo {width:80%; display: block; margin: 0 auto;}
+      #photo_explain {font-size:0.9em; text-align:center; margin-bottom:60px;}
+      #paragraph {margin-bottom:40px;}
+
+      #partition {border-bottom: 1px solid #6dc3a6; padding-top:60px;}
+      #reference {font-size:1em; margin-left:20px; list-style-type: square;}
+      #reference a {color:black;}
+
+
+     /* footer */
+      .footer {height:150px; background-color:#6dc3a6; display:grid; grid-template-columns:3fr 1fr;}
+	  .footer img {height:30px; margin:40px 0px 0px 100px; }
+	  .footer div p {color:white; margin:10px 0px 0px 100px;}
+	  .footer div:nth-child(2) ul a {color:white; line-height:170%; font-family:'Nanum Gothic';}
+	  .footer div:nth-child(2) ul li:nth-child(3) {color:white; }
+
+</style>
+</head>
+<body>
+
+<div class="header">
+  	<div>
+  		<a href="/"><img alt="Green Lab" src="image\Logo\Logo-green.png"></a>
+ 	 	<ul>
+ 	 		<li><a href="/shortNews">짧은 소식.</a></li>
+ 	 		<li><a href="/longNews">조금 긴 소식. </a></li>
+ 	 		<li><a href="/lunch">직장인 점심. </a></li>
+ 	 		<li><a href="/garbage">버려지는 것들. </a></li>
+ 	 	</ul>
+    </div>
+
+    <div class="line1"></div>
+    <div class="line2"></div>
+</div>
+
+<article>
+  <div id="classify">국내시사 &nbsp 2020/08/19 </div>
+  <div id="title">코로나19 2차 대유행 조짐</div>
+
+  <img id="photo" src="image\200819_shortNews.png" alt="코로나19 2차 대유행 조짐">
+  <div id="photo_explain">ⓒGreenLab9</div>
+
+  <div id="paragraph">
+    8월 13일 중앙방역대책 본부는 정례 브리핑을 통해 서울을 비롯한 수도권은 일촉즉발의 상황이라며 지금이 실질적 위험이라고 했습니다. 8월 중순 현재 코로나가 산발적으로 확산되는 상황으로 수도권 및 전국으로 빠르게 확산될 조짐이 보인다는 것입니다.
+  </div>
+  <div id="paragraph">
+    왜 이런 대유행 조짐 전망이 나왔을까요? 단일 감염원이 아니라 수도권 각지에서 여러 모임과 장소에서 동시다발적으로 확진자가 나오고 있기 때문입니다.
+  </div>
+  <div id="paragraph">
+    먼저, 교회를 중심으로 산발적으로 확산되고 있는데요. 일산의 반석교회에서 확진자가 나왔고, 용인 우리제일교회에서 총 12명의 확진자가 나왔고, 서울 성북구 사랑제일교회도 총 5명의 확진자가 나왔습니다. 더 심각한 것은 학교에까지도 확산되고 있다는 것입니다. 일산의 한 고등학교에서 확진자가 나왔고, 용인 죽전고와 대지고 학생 5명이 확진 판정을 받았고 부산 해운대구 부산기계공업고등학교에서도 총 3명의 확진자가 나왔습니다. 정말 동시다발적으로 확산되고 있지요
+  </div>
+  <div id="paragraph">
+    이렇게 동시다발적 확산이 끊이지 않는 이유는 무증상 경증 감염의 조용한 전파가 상당 기간 지역사회에서 확인되지 않고 이여 져 왔기 때문이라고 합니다. 그리고, 여기에 여름휴가 기간과 맞물리고 또 17일이 임시 휴일이 되면서 3일간의 연휴 기간 동안 여행과 소모임, 광복절 날 대규모 집회 등을 통해서 코로나가 증폭된다면 그때는 정말 통제 불가능한 상황이 올 수도 있다는 것입니다
+  </div>
+  <div id="paragraph">
+    방역당국은 사회적 거리 두기를 상향 조정할 수 있다고 밝혔습니다. 사회적 거리 두기 1단계는 국내 발생 환자가 50명 미만으로 발생하는 소규모 유행 상황이며, 2단계는 국내 발생 환자 50~100명 수준으로 발생하는 지역사회 확산 상황에서 시행된다고 합니다.   8월 13일 0시 기준으로 코로나바이러스 감영증 신규 환자는 56명 (국내 발생 47명, 해외유입 9명).... 이틀째 50명 넘게 발생하고 있습니다. 현재 아슬아슬한 사회적 거리 두기 1단계인데 이것을 2단계로 올리겠다는 것입니다.
+  </div>
+
+  <div id="partition"></div>
+  <div id="classify">관련 기사</div>
+
+  <ol id="reference">
+    <li>
+      <a href="https://biz.chosun.com/site/data/html_dir/2020/08/18/2020081803008.html">
+        조선비즈, 코로나 2차 대유행 조짐</a>
+    </li>
+    <li>
+      <a href="https://www.asiae.co.kr/article/2020082312020429151">
+        한겨레, 신천지 때보다 더 위험하다. 2차 대유행 둑 터지나 </a>
+    </li>
+  </ol>
+
+</article>
+
+<footer th:replace="/layout/footer"></footer>
+
+
+</body>
+</html>

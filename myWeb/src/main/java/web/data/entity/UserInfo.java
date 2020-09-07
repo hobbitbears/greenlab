@@ -23,7 +23,7 @@ public class UserInfo implements Serializable {
 	private static final long serialVersionUID = 3826076993492916439L;
 
 	/**
-	 * ÀÚµ¿»ı¼º primary Key
+	 * ìë™ìƒì„± primary Key
 	 */
 	@Id
 	@Column(name="id")
@@ -31,20 +31,20 @@ public class UserInfo implements Serializable {
 	private Integer id;
 	
 	/**
-	 * °í°´Email
+	 * ê³ ê°Email
 	 */
 	@Column(name="email", length=80)
 	private String email;
 	
 	/**
-	 * »ı¼ºÀÏ
+	 * ìƒì„±ì¼
 	 */
 	@Column(name="created")
 	@CreatedDate
 	private LocalDateTime created;
 	
 	/**
-	 * ¼öÁ¤ÀÏ
+	 * ìˆ˜ì •ì¼
 	 */
 	@Column(name="modified")
 	@UpdateTimestamp

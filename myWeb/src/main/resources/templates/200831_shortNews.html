@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>GreenLab9</title>
+<link rel="shortcut icon" href=".\Photo\favicon.ico" type="image/x-icon">
+<link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
+
+<style>
+  	  body{margin:0px; padding:0px;}
+      a {text-decoration:none}
+
+      @font-face { font-family: 'Bazzi'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/Bazzi.woff') format('woff'); font-weight: normal; font-style: normal; }
+      @font-face { font-family: 'KOMACON'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_seven@1.2/KOMACON.woff') format('woff'); font-weight: normal; font-style: normal; }
+
+     /* header */
+     .header {overflow:hidden; margin:0px;}
+     .header div img {height:40px;  margin:20px 60px 0px 20px; float:left;}
+     .header ul li {float:left; font-size:1.1em; margin:38px 35px 0px 0px; font-family:'Bazzi'; list-style:none;}
+     .header ul li a {color:#6dc3a6;}
+
+     .line1 {width:70%; height:25px; border-bottom: 2px solid #6dc3a6; float:left; clear:both;}
+     .line2 {width:70%; height:10px; border-bottom: 2px solid #6dc3a6; float:right; }
+
+     /* article */
+	  article {width:40%; margin:80px auto; line-height:200%; font-family:'Nanum Gothic'; color:#373737;}
+      #classify {font-size:1.1em; color:#6dc3a6; font-family:'Bazzi'; margin-bottom:8px; }
+      #title {font-size:2.4em; font-weight:bold; font-family:'KOMACON'; margin-bottom:80px;}
+
+      #photo {width:80%; display: block; margin: 0 auto;}
+      #photo_explain {font-size:0.9em; text-align:center; margin-bottom:60px;}
+      #paragraph {margin-bottom:40px;}
+
+      #addition {border:1px solid #6dc3a6; background-color: #6dc3a6; color:white; border-radius: 4px; padding:15px; margin: 40px 0; }
+
+      #partition {border-bottom: 1px solid #6dc3a6; padding-top:60px;}
+      #reference {font-size:1em; margin-left:20px; list-style-type: square;}
+      #reference a {color:black;}
+
+
+     /* footer */
+      .footer {height:150px; background-color:#6dc3a6; display:grid; grid-template-columns:3fr 1fr;}
+	  .footer img {height:30px; margin:40px 0px 0px 100px; }
+	  .footer div p {color:white; margin:10px 0px 0px 100px;}
+	  .footer div:nth-child(2) ul a {color:white; line-height:170%; font-family:'Nanum Gothic';}
+	  .footer div:nth-child(2) ul li:nth-child(3) {color:white; }
+
+</style>
+</head>
+<body>
+
+<div class="header">
+  	<div>
+  		<a href="/"><img alt="Green Lab" src="image\Logo\Logo-green.png"></a>
+ 	 	<ul>
+ 	 		<li><a href="/shortNews">짧은 소식.</a></li>
+ 	 		<li><a href="/longNews">조금 긴 소식. </a></li>
+ 	 		<li><a href="/lunch">직장인 점심. </a></li>
+ 	 		<li><a href="/garbage">버려지는 것들. </a></li>
+ 	 	</ul>
+    </div>
+
+    <div class="line1"></div>
+    <div class="line2"></div>
+</div>
+
+<article>
+  <div id="classify">국제•외교 &nbsp 2020/08/31 </div>
+  <div id="title">아프리카, 폴리오바이러스(소아마비) 사라졌다!</div>
+
+  <img id="photo" src="image\200831_shortNews.png" alt="Global Polio Eradication Initiative, GPEI">
+  <div id="photo_explain">ⓒGPEI</div>
+
+  <div id="paragraph">
+    세계보건기구(WHO)는 지난 25일 아프리카 47개국에서 폴리오바이러스(소아마비)가 사라졌다고 공식 발표했습니다. 아프리카에서 천연두에 이어 두 번째로 종식된 질병입니다.
+  </div>
+  <div id="paragraph">
+    폴리오바이러스(Poliovirus)는 주로 5세 미만의 영유아들이 감염되는 전염성이 강한 질병입니다. 이 바이러스는 주로 오염된 물을 통해 전염되며 신경계를 공격해 마비를 일으킵니다. 치료방법은 딱히 없지만 1952년 개발된 백신을 통해 예방이 가능합니다. 유럽에서는 1995년에, 우리나라를 포함한 다른 지역에서는 2000년에 이 바이러스가 사라졌지만, 아프리카에서는 백신이 부족하고 위생상태가 낙후되어 매년 7만 5천 명의 어린아이들이 폴리오바이러스에 감염되었지요.
+  </div>
+  <div id="paragraph">
+    국제사회는 아프리카에서 폴리오바이러스 퇴치를 위한 이니셔티브(Global Polio Eradication Initiative, GPEI)를 1988년에 발족합니다. 이 이니셔티브는 WHO, Rotary International, 미국 질병관리예방국, 유니세프, 빌 게이츠 재단 등 공공과 민간이 파트너십(public-private partnership) 형태로 참여하고 있고 지난 30년간의 노력으로 아프리카에서 폴리오바이러스를 사라지게 하는 성과를 거둔 것입니다.
+  </div>
+  <div id="paragraph">
+    국제사회는 경축하는 분위기지만, 아프리카는 여전히 많은 질병들로부터 고통받고 있습니다. 지난 30년간 폴리오바이러스를 퇴치하면서 축적된 경험치, 네트워크, 인프라 등을 코로나19와 같은 다른 전염병에도 활용하자는 목소리가 있습니다. 특히, 아프리카 주민들의 문화적 특성을 고려하고 핸드폰을 활용한 위치 추적 기술 등은 광범위하게 활용될 수 있다고 합니다.
+  </div>
+  <div id="addition">
+    전 세계에서 폴리오바이러스가 여전히 남아 있는 곳은 아프가니스탄과 파키스탄 단 두곳입니다. 
+  </div>
+
+  <div id="partition"></div>
+  <div id="classify">관련 기사</div>
+
+  <ol id="reference">
+    <li>
+      <a href="https://www.who.int/news-room/detail/25-08-2020-global-polio-eradication-initiative-applauds-who-african-region-for-wild-polio-free-certification">
+        WHO, Global polio eradication initiative applauds WHO African region for wild polio-free certification</a>
+    </li>
+    <li>
+      <a href="https://www.devex.com/news/how-the-eradication-of-wild-poliovirus-from-africa-can-guide-the-covid-19-response-97989">
+        Devex, How the eradication of wild poliovirus from Africa can guide the COVID-19 response </a>
+    </li>
+    <li>
+      <a href="https://www.nytimes.com/2020/08/24/world/africa/polio-africa-eradicated.html">
+        The New York Times, Africa Celebrates the End of the Wild Poliovirus (but Not the End of All Polio) </a>
+    </li>
+  </ol>
+
+</article>
+
+<footer th:replace="/layout/footer"></footer>
+
+
+</body>
+</html>

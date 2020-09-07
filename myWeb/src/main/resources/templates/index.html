@@ -1,8 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html xmlns:th="http://www.thymeleaf.org">
 <head>
 <meta charset="UTF-8">
-<title>GreenLab9.그린랩나인</title>
+<title>GreenLab9</title>
+<link rel="shortcut icon" href="image\favicon.ico" type="image/x-icon">
 
 <style type="text/css">
 	body{margin:0px; padding:0px;}
@@ -45,6 +46,7 @@
 </head>
 
 <body>
+
  <div class="header">
  		<div class="wrap">
  			<div>
@@ -73,10 +75,9 @@
  	</div>
  	<div>
  		<ul>
- 			<li><img src="image\Dolphin.png"></li>
- 			<li><img src="image\Mars.png"></li>
- 			<li><img src="image\Mask.png"></li>
- 			<!-- <li><img class="sample" src="image\Putin.png"></li> -->
+ 			<li th:each="shortNews : ${newsShortList}">
+ 				<img th:src="${shortNews.titleImage}" th:alt="${shortNews.titleImage}"/>
+ 			</li>
  		</ul>
  	</div>
  	<div id="more">
@@ -119,24 +120,8 @@
  		<a href="/lunch">더보기</a>
  	</div>
  </div>
- 
- 
- <div class="footer">	
- 	<div>
- 	 	<a href="/"><img alt="Green Lab" src="image\Logo\Logo-white.png"></a>
- 	 	<p>진정성을 추구합니다.</p>
- 	</div>
- 	<div>
- 		<ul>
- 			<li><a href="/termsOfUse">이용약관</a></li>
- 			<li><a href="/privacy">개인정보처리방침</a></li>
- 			<li><a href="#">문의사항</a></li>
- 			<li style="color:#ffffff;">GreenLab9ⓒ2020</li>
- 		</ul>
- 	</div>
- </div>
- 
- 
- 
+
+<footer th:replace="/layout/footer"></footer>
+
 </body>
 </html>
